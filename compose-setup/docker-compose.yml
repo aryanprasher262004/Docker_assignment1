@@ -1,0 +1,23 @@
+version: '3.8'
+services:
+  container1:
+    image: prasheraryan/r2142231706:latest
+    container_name: compose_container1
+    ports:
+      - "8081:80"
+    volumes:
+      - MyDvol:/data
+    tty: true
+
+  container2:
+    image: prasheraryan/r2142231706:latest
+    container_name: compose_container2
+    ports:
+      - "8082:80"
+    volumes:
+      - MyDvol:/data
+    tty: true
+
+volumes:
+  MyDvol:
+    external: true
