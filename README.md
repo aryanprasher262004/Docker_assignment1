@@ -1,50 +1,94 @@
-This assignment focuses on implementing Docker containerization by creating a custom Docker image using Ubuntu, installing Python and Nginx, managing containers and volumes, pushing images to Docker Hub, and orchestrating multiple containers using Docker Compose with shared storage functionality.
-Objective
+# 🐳 Docker Assignment 1 — Containerization Lab
 
-To understand Dockerfile creation and image building.
+## 📌 Overview
 
-To deploy containers using Docker images.
+This project demonstrates Docker containerization by creating a custom Docker image using **Ubuntu** as the base operating system. The image includes **Python 3** and the **Nginx web server**, and showcases Docker fundamentals such as image building, container management, persistent storage, Docker Hub integration, and multi-container orchestration using Docker Compose.
 
-To implement persistent storage using Docker volumes.
+The project is designed for **educational and experimental purposes**, enabling students and beginners to understand real-world Docker workflows.
 
-To use Docker Hub for image distribution.
+---
 
-To orchestrate multiple containers using Docker Compose.
+## 🎯 Objective
 
-To demonstrate shared volume functionality between containers.
+- Understand Dockerfile creation and image building
+- Deploy containers using Docker images
+- Implement persistent storage using Docker volumes
+- Use Docker Hub for image distribution
+- Orchestrate multiple containers using Docker Compose
+- Demonstrate shared volume functionality between containers
 
+---
 
+## 🧱 Image Description
 
-HOW TO USE
-Image Description
+This Docker image is created as part of a Docker laboratory experiment to demonstrate containerization concepts using Ubuntu as the base OS.
 
-This Docker image is created as part of a Docker laboratory experiment to demonstrate containerization concepts using Ubuntu as the base operating system. The image comes preconfigured with Python 3 and the Nginx web server installed, making it suitable for learning and experimentation purposes.
+The image comes preconfigured with:
 
-The image can be used to practice Docker container execution, volume mounting, multi-container setups, and Docker Compose orchestration. It provides a ready-to-use environment for students and beginners to perform Docker experiments without manually installing dependencies.
+- ✅ Ubuntu (latest)
+- ✅ Python 3
+- ✅ Nginx Web Server
 
-This image is intended for educational use and can be used to:
+It provides a ready-to-use environment for performing Docker experiments without manually installing dependencies.
 
-Run Ubuntu-based containers quickly
+---
 
-Practice Python execution inside containers
+## 🚀 What You Can Do With This Image
 
-Experiment with Nginx server configuration
+- Run Ubuntu-based containers instantly
+- Practice Python execution inside containers
+- Experiment with Nginx configuration
+- Test Docker volumes and persistent storage
+- Perform multi-container setups using Docker Compose
+- Learn Docker Hub image distribution workflows
 
-Test Docker volumes and persistent storage
+---
+🗂️ Project Features
 
-Perform multi-container experiments using Docker Compose
+Custom Docker image built using Dockerfile
 
-Learn Docker Hub image distribution workflows
+Ubuntu-based environment setup
 
-Users can pull the image directly from Docker Hub and start containers for experimentation and learning purposes.
+Python and Nginx installation
 
-✅ Usage Instructions (Add Below Description)
+Docker Hub image publishing
 
-You can also include this — teachers LOVE when usage is documented.
+Persistent storage using Docker volumes
 
-Pull Image
+Multi-container orchestration using Docker Compose
+
+Shared volume verification between containers
+
+🧪 Educational Purpose
+
+This image is intended for:
+
+Docker laboratory experiments
+
+DevOps learning
+
+Containerization practice
+
+Academic demonstrations
+
+## 📥 How to Use
+
+### 1️⃣ Pull the Image
+
+```bash
 docker pull username/R2142231706:latest
-Run Container
+
 docker run -dit --name test-container username/R2142231706:latest
-Run with Volume (Recommended for Experiments)
+
 docker run -dit -v MyDvol:/data username/R2142231706:latest
+
+🧹 Cleanup (Optional)
+
+Stop and remove container:
+
+docker stop test-container
+docker rm test-container
+
+Remove volume:
+
+docker volume rm MyDvol
